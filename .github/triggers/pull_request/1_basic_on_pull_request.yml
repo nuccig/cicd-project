@@ -1,0 +1,10 @@
+name: GitHub Actions - Pull Request Template Básico
+run-name: Running - ${{ github.event_name }}
+on: [pull_request]
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentário PULL REQUEST WORKFLOW - Basic"
