@@ -2,8 +2,8 @@ name: GitHub Actions - Cron Job Template
 run-name: Running - ${{ github.event_name }}
 on:
   schedule:
-    # 9 horas da manhã de segunda a sexta
-    - cron: "23 2 * * 1-5"
+    # 9 horas da manhã de domingo a sábado
+    - cron: "0 12 * * 0-6"
 
     # Minuto 2 e Minuto 10 as 8 horas da manhã e 10 horas da manhã
     # 8:02 / 08:10 e 10:02 / 10:10
