@@ -1,5 +1,5 @@
 name: GitHub Actions - Dependency General
-run-name: Running - ${{ github.event_name }}
+run-name: Running - ${{ github.event_name }} - ${{ github.workflow }}
 on:
   push:
     branches:
