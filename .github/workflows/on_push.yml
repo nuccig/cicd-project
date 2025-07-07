@@ -9,6 +9,8 @@ on:
     # - 'release/**'
     # paths:
     #   - "**.txt"
+env:
+  variavel: Teste Env
 jobs:
   on-push:
     runs-on: ubuntu-latest
@@ -22,3 +24,7 @@ jobs:
       - name: Comentário secret
         run: |
           echo "Comentário SECRET: ${{ secrets.SECRET_TESTE }}"
+      - name: Comentário Env
+        run: |
+          echo "Comentário ENV: ${{ env.variavel }}"
+          echo "Comentário ENV: $variavel"
