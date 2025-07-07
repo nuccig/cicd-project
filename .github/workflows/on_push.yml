@@ -16,9 +16,9 @@ jobs:
       - name: Comentário
         run: |
           echo "Comentário PUSH WORKFLOW"
-      - name: Comentário
+      - name: Comentário variable
         run: |
           echo "Comentário VAR: ${{ vars.VAR_TESTE }}"
-      - name: Comentário Secret
+      - name: Comentário secret
         run: |
           echo "Comentário SECRET: ${{ secrets.SECRET_TESTE }}"
