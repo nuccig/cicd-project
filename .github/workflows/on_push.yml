@@ -15,4 +15,10 @@ jobs:
     steps:
       - name: Comentário
         run: |
-          echo "Comentário PUSH WORKFLOW ${{ vars.VAR_TESTE }}"
+          echo "Comentário PUSH WORKFLOW"
+      - name: Comentário
+        run: |
+          echo "Comentário VAR: ${{ vars.VAR_TESTE }}"
+      - name: Comentário Secret
+        run: |
+          echo "Comentário SECRET: ${{ secrets.SECRET_TESTE }}"
