@@ -1,6 +1,14 @@
 name: GitHub Actions - Trigger 1
 run-name: Running - Trigger 1
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+      - develop
+    # branches-ignore:
+    # - 'release/**'
+    paths:
+      - "**.txt"
 jobs:
   on-push:
     runs-on: ubuntu-latest

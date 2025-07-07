@@ -7,8 +7,8 @@ on:
       - develop
     # branches-ignore:
     # - 'release/**'
-    paths:
-      - "**.txt"
+    # paths:
+    #   - "**.txt"
 jobs:
   on-push:
     runs-on: ubuntu-latest
